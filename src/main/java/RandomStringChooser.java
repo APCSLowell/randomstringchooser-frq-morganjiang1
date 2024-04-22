@@ -1,13 +1,13 @@
 import java.util.*;
 public class RandomStringChooser{
-private String[] stringChooser;
-private boolean[] availability;
+private ArrayList<String> stringChooser;
 
 public RandomStringChooser(String [] wordArray){
-availability = new boolean[wordArray.length];
-stringChooser = wordArray;
-for(int i = 0; i < availability.length; i++)
-availability[i]  = true;
+stringChooser = new ArrayList<String>();
+for (int i = 0; i < wordArray.length; i++)
+{
+  stringChooser.add(wordArray[i]);
+}
 }
 
 public String getNext(){
@@ -15,11 +15,6 @@ if (stringChooser.length < 1)
 {
   return "NONE";
 }
-int randomIndex = (int)(Math.random() * availability.length);
-if(availability[randomIndex]){
-availability[randomIndex] = false;
-return stringChooser[randomIndex];
-}
-return "NONE";
-}
+int randomIndex = (int)(Math.random() * stringChooser.length);
+return stringChooser.remove(randomIndex);
 }
