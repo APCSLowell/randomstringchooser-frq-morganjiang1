@@ -18,3 +18,4 @@ if (stringChooser.length < 1)
 int randomIndex = (int)(Math.random() * stringChooser.length);
 return stringChooser.remove(randomIndex);
 }
+}
