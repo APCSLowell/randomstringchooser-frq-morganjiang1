@@ -11,6 +11,10 @@ availability[i]  = true;
 }
 
 public String getNext(){
+if (wordArray.length < 1)
+{
+  return "NONE";
+}
 int randomIndex = (int)(Math.random() * availability.length);
 if(availability[randomIndex]){
 availability[randomIndex] = false;
