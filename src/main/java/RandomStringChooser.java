@@ -1,4 +1,4 @@
-import java.util.;
+import java.util.*;
 public class RandomStringChooser{
 private String[] stringChooser;
 private boolean[] availability;
