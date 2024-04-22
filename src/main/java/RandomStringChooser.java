@@ -11,7 +11,7 @@ availability[i]  = true;
 }
 
 public String getNext(){
-if (wordArray.length < 1)
+if (stringChooser.length < 1)
 {
   return "NONE";
 }
