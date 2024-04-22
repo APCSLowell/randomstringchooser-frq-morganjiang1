@@ -15,7 +15,7 @@ if (stringChooser.length < 1)
 {
   return "NONE";
 }
-int randomIndex = (int)(Math.random() * stringChooser.length);
+int randomIndex = (int)(Math.random() * stringChooser.size());
 return stringChooser.remove(randomIndex);
 }
 }
