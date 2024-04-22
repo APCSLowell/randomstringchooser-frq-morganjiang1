@@ -11,7 +11,7 @@ for (int i = 0; i < wordArray.length; i++)
 }
 
 public String getNext(){
-if (stringChooser.length < 1)
+if (stringChooser.size() < 1)
 {
   return "NONE";
 }
