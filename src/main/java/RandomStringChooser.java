@@ -16,8 +16,6 @@ if(availability[randomIndex]){
 availability[randomIndex] = false;
 return stringChooser[randomIndex];
 }
-else {
 return "NONE";
-}
 }
 }
